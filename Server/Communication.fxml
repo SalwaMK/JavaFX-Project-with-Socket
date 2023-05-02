@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salwa.demo4.CommunicatinControl">
+    <children>
+        <Pane prefHeight="600.0" prefWidth="800.0">
+            <children>
+                <Label layoutX="320.0" layoutY="14.0" prefHeight="50.0" prefWidth="160.0" text="Messenger">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <ScrollPane fx:id="sp_main" layoutX="19.0" layoutY="67.0" prefHeight="450.0" prefWidth="761.0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="449.0" prefWidth="763.0">
+                            <children>
+                                <VBox fx:id="vb_msg" layoutX="26.0" layoutY="14.0" prefHeight="398.0" prefWidth="704.0" />
+                            </children></AnchorPane>
+                    </content>
+                </ScrollPane>
+                <TextField fx:id="tf_msg" layoutX="40.0" layoutY="538.0" prefHeight="37.0" prefWidth="612.0" />
+                <Button fx:id="send" layoutX="673.0" layoutY="538.0" mnemonicParsing="false" onAction="#send" prefHeight="37.0" prefWidth="73.0" text="send">
+                    <font>
+                        <Font size="19.0" />
+                    </font></Button>
+            </children></Pane>
+    </children>
+</AnchorPane>

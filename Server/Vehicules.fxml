@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="840.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salwa.demo4.VehiculeController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <BorderPane layoutX="116.0" layoutY="83.0" prefHeight="600.0" prefWidth="840.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <right>
+                        <AnchorPane prefHeight="600.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutX="13.0" layoutY="24.0" prefHeight="551.0" prefWidth="294.0" styleClass="border">
+                                    <children>
+                                        <Label layoutX="27.0" layoutY="14.0" text="Vehicule Number" textFill="#333540">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="agencyName" layoutX="27.0" layoutY="40.0" prefHeight="35.0" prefWidth="197.0" />
+                                        <Label layoutX="27.0" layoutY="84.0" text="Preffered Agency Name" textFill="#333540">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <TextField fx:id="agencyAddress" layoutX="27.0" layoutY="110.0" prefHeight="35.0" prefWidth="198.0" />
+                                        <Label layoutX="27.0" layoutY="157.0" text="Purchase Year" textFill="#333540">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                        </Label>
+                                        <ComboBox fx:id="agencyYear" layoutX="27.0" layoutY="194.0" prefHeight="35.0" prefWidth="255.0" promptText="Choose ..." />
+                                        <Button fx:id="addBtn" layoutX="44.0" layoutY="325.0" mnemonicParsing="false" onAction="#agencyAddBtn" prefHeight="39.0" prefWidth="88.0" styleClass="btn" text="Add" />
+                                        <Button fx:id="deleteBtn" layoutX="161.0" layoutY="325.0" mnemonicParsing="false" onAction="#agencyDeleteBtn" prefHeight="39.0" prefWidth="88.0" styleClass="btn" text="Delete" />
+                                        <Button fx:id="updateBtn" layoutX="44.0" layoutY="372.0" mnemonicParsing="false" onAction="#agencyUpdateBtn" prefHeight="39.0" prefWidth="88.0" styleClass="btn" text="Update" />
+                                        <Button fx:id="clearBtn" layoutX="161.0" layoutY="372.0" mnemonicParsing="false" onAction="#agencyClearBtn" prefHeight="39.0" prefWidth="88.0" styleClass="btn" text="Clear" />
+                                        <Button fx:id="comBtn" layoutX="44.0" layoutY="420.0" mnemonicParsing="false" onAction="#go" prefHeight="38.0" prefWidth="90.0" styleClass="btn" text="com" />
+                                        <Button fx:id="vBtn" layoutX="164.0" layoutY="420.0" mnemonicParsing="false" onAction="#agencies" prefHeight="39.0" prefWidth="86.0" styleClass="btn" text="Agencies" />
+                                    </children></AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </right>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <AnchorPane layoutX="21.0" layoutY="22.0" prefHeight="555.0" prefWidth="478.0" styleClass="border">
+                                    <children>
+                                        <TableView fx:id="tableView" layoutX="16.0" layoutY="18.0" onMouseClicked="#agencySelectData" prefHeight="519.0" prefWidth="444.0" stylesheets="@styles.css">
+                                            <columns>
+                                                <TableColumn fx:id="colName" prefWidth="121.20000457763672" text="Vehicule Number" />
+                                                <TableColumn fx:id="colAddress" prefWidth="167.60000610351562" text="Preffered Agency Name" />
+                                                <TableColumn fx:id="colYear" prefWidth="154.00003051757812" text="Purchase Year" />
+                                            </columns>
+                                        </TableView>
+                                    </children></AnchorPane>
+                            </children></AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

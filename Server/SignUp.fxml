@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="752.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="salwa.demo4.Login">
+    <children>
+        <Pane id="login" layoutY="-4.0" prefHeight="401.0" prefWidth="311.0" style="-fx-background-color: #333540;" styleClass="login" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="155.0" fitWidth="256.0" layoutX="39.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../../images/home1.jpg" />
+                    </image></ImageView>
+                <Label layoutX="88.0" layoutY="223.0" prefHeight="43.0" prefWidth="135.0" text="Autosyntirisi" textFill="WHITE">
+                    <font>
+                        <Font name="Calibri Light Italic" size="22.0" />
+                    </font></Label>
+                <Label layoutX="44.0" layoutY="259.0" prefHeight="90.0" prefWidth="224.0" text="Everything you need for your Car Maintanance" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Pane layoutX="376.0" layoutY="47.0" prefHeight="335.0" prefWidth="376.0">
+            <children>
+                <TextField id="fullname" fx:id="fullname" layoutX="8.0" layoutY="32.0" prefHeight="33.0" prefWidth="317.0" promptText="Full Name" />
+                <TextField id="username" fx:id="username" layoutX="10.0" layoutY="80.0" prefHeight="33.0" prefWidth="317.0" promptText="User Name or Email" />
+                <Button fx:id="btnSignin" layoutX="136.0" layoutY="221.0" mnemonicParsing="false" onAction="#signIn" prefHeight="33.0" prefWidth="65.0" text="Sign in" />
+                <Button fx:id="btnSignup" layoutX="134.0" layoutY="264.0" mnemonicParsing="false" onAction="#add" prefHeight="33.0" prefWidth="65.0" text="Sign up" />
+                <Label fx:id="lblMsg" layoutX="24.0" layoutY="297.0" prefHeight="17.0" prefWidth="338.0" textFill="#f40e0e" />
+                <PasswordField id="password" fx:id="password" layoutX="8.0" layoutY="129.0" prefHeight="33.0" prefWidth="317.0" promptText="Password" />
+                <TextField id="position" fx:id="position" layoutX="8.0" layoutY="181.0" prefHeight="33.0" prefWidth="317.0" promptText="Position" />
+
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
